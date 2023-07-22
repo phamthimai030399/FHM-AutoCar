@@ -3,6 +3,9 @@
 @import "../css/our-policy.css";
 @import "../css/form-product-best-seller.css";
 @import "../css/the-most-wanted-dimensions.css";
+@import "../css/product-category.css";
+@import "../css/product-popular.css";
+@import "../css/our-featured.css";
 
 body {
     background: #fff;

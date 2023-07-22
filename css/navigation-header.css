@@ -23,9 +23,7 @@ header .top-header a {
 .title-logo span {
     color: #FFF;
     font-size: 17px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     display: inline;
     padding: 0px;
 }
@@ -62,9 +60,7 @@ header .top-header a {
     top: 10px;
     color: #FFF;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .box-icon {
