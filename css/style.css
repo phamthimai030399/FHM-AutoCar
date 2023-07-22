@@ -1,0 +1,23 @@
+@import "../css/navigation-header.css";
+@import "../css/hero-background.css";
+@import "../css/our-policy.css";
+@import "../css/form-product-best-seller.css";
+@import "../css/the-most-wanted-dimensions.css";
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+img {
+}
