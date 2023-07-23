@@ -1,18 +1,3 @@
-.form-product-best-seller {
-    padding-top: 70px;
-}
-
-.product-best-seller-image {
-    width: 100%;
-}
-
-.product-best-seller {
-    gap: 80px;
-}
-
-.position-relative {
-    padding: 20px;
-}
 .product-best-selle-title .title {
     background: url("../image/product-best-seller-title.svg");
     background-size: 100% 100%;
@@ -22,53 +7,57 @@
     font-weight: 500;
 }
 
-.icon-product-favorite {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    width: 18px;
+
+.carousel-inner .carousel-item {
+    /* display: flex; */
+    /* justify-content: space-between!important; */
+    background: #FFF;
+}
+.carousel .carousel-control-prev, 
+.carousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 50%;
+    top: 30%;
+    box-shadow: 0px 0px 5px 0px #aaa;;
+} 
+.carousel .carousel-control-prev-icon {
+    background-image: url("../image/carousel-control-prev-icon.svg");
+}
+.carousel .carousel-control-next-icon {
+    background-image: url("../image/carousel-control-next-icon.svg");
+} 
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 }
 
-.product-best-seller .brand-name {
-    color: #969595;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
 }
 
-.product-best-seller h3 {
-    font-size: 18px;
-    font-weight: 600;
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
 }
 
-.product-best-seller p {
-    color: #616161;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.product-best-seller .current-price {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.product-best-seller .origin-price {
-    color: #969595;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: line-through;
-}
-
-.btn-add-to-cart {
-    border-radius: 3px;
-    background: #FFE502;
-    color: #000;
-    padding: 7px 15px;
-}
-
-.btn-add-to-cart span {
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 500;
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
 }
